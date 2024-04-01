@@ -2,10 +2,13 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 def plot_activation_function(first, second, title):
+  first = np.sort(first)
+  second = np.sort(second)
+  
   plt.plot(first, second)
 
-  plt.xlabel("X")
-  plt.ylabel(title + "(X)")
+  plt.xlabel("x")
+  plt.ylabel(title + "(x)")
   plt.title(title + " value")
 
   plt.grid(True)
